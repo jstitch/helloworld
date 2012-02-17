@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # coding: utf-8
 
-def hello(lang="en"):
+def hello(lang="en", name="javier"):
     cad = "Hello World!"
 
     if lang == "de":
@@ -19,7 +19,7 @@ def hello(lang="en"):
     elif lang == "ef":
         cad = "Hofolafa Mufundofo!"
 
-    print cad
+    print cad + " & " + name
 
 if __name__ == "__main__":
     import sys
@@ -27,4 +27,8 @@ if __name__ == "__main__":
         lan = sys.argv[1]
     except IndexError:
         lan = "en"
-    hello(lang=lan)
+    try:
+        nam = sys.argv[2]
+    except IndexError:
+        nam = "javier"
+    hello(lang=lan, name=nam)
