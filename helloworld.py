@@ -16,6 +16,8 @@ def hello(lang="en"):
         cad = "Ola Mundo!"
     elif lang == "ru":
         cad = u'привет мир'
+    elif lang == "ef":
+        cad = "Hofolafa Mufundofo!"
 
     print cad
 
