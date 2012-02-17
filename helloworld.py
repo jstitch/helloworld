@@ -1,7 +1,28 @@
 #!/usr/bin/python
+# coding: utf-8
 
-def hello():
-    print "Hello World!"
+def hello(lang="en"):
+    cad = "Hello World!"
+
+    if lang == "de":
+        cad = "Hallo Welt!"
+    elif lang == "mx":
+        cad = "Hola Mundo!"
+    elif lang == "fr":
+        cad = "Bonjour Monde!"
+    elif lang == "it":
+        cad = "Ciao Mondo!"
+    elif lang == "pr":
+        cad = "Ola Mundo!"
+    elif lang == "ru":
+        cad = u'привет мир'
+
+    print cad
 
 if __name__ == "__main__":
-    hello()
+    import sys
+    try:
+        lan = sys.argv[1]
+    except IndexError:
+        lan = "en"
+    hello(lang=lan)
