@@ -6,6 +6,6 @@ from views import hello
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-#                       url(r'^hello/(?P<lang>\w{2})/$', hello),
+                       url(r'^hello/(?P<lang>\w{2})/$', hello),
                        url(r'^$', hello),
 )

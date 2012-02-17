@@ -19,7 +19,7 @@ def hello(lang="en"):
     elif lang == "ef":
         cad = "Hofolafa Mufundofo!"
 
-    print cad
+    return cad
 
 if __name__ == "__main__":
     import sys
