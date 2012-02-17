@@ -19,7 +19,7 @@ def hello(lang="en", name="javier"):
     elif lang == "ef":
         cad = "Hofolafa Mufundofo!"
 
-    print cad + " & " + name
+    return cad + " & " + name
 
 if __name__ == "__main__":
     import sys
@@ -31,4 +31,4 @@ if __name__ == "__main__":
         nam = sys.argv[2]
     except IndexError:
         nam = "javier"
-    hello(lang=lan, name=nam)
+    print hello(lang=lan, name=nam)
