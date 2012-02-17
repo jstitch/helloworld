@@ -6,7 +6,7 @@ def hello(lang="en"):
 
     if lang == "de":
         cad = "Hallo Welt!"
-    elif lang == "mx":
+    elif lang == "es":
         cad = "Hola Mundo!"
     elif lang == "fr":
         cad = "Bonjour Monde!"
